@@ -50,48 +50,49 @@
       <hr size="30" noshade />
     </header>
 
-    <!-- Contact form -->
-    <div class="container contact-form">
-      <div class="row">
-        <div class="col-md-6">
-          <p>
-            E-mail:
-            <a href="mailto:meshankhosla@gmail.com">meshankhosla@gmail.com</a>
-          </p>
-          <p>Phone: (209)-559-8634</p>
-        </div>
-        <div class="col-md-6">
-          <!-- Name -->
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" />
+    <!-- Contact form with netlify-->
+    <form name="contact" netlify>
+      <div class="container contact-form">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              E-mail:
+              <a href="mailto:meshankhosla@gmail.com">meshankhosla@gmail.com</a>
+            </p>
+            <p>Phone: (209)-559-8634</p>
           </div>
+          <div class="col-md-6">
+            <!-- Name -->
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" />
+            </div>
 
-          <!-- E-mail -->
-          <div class="form-group">
-            <label>E-mail</label>
-            <input type="text" class="form-control" />
-          </div>
+            <!-- E-mail -->
+            <div class="form-group">
+              <label>E-mail</label>
+              <input type="text" class="form-control" />
+            </div>
 
-          <!-- Message -->
-          <div class="form-group">
-            <label>Message</label>
-            <textarea
-              placeholder="Enter message here"
-              name="Message"
-              class="form-control"
-              rows="5"
-            ></textarea>
-          </div>
+            <!-- Message -->
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                placeholder="Enter message here"
+                name="Message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
 
-          <!-- Submit -->
-          <div class="form-group">
-            <button class="btn btn-primary btn-block">Send</button>
+            <!-- Submit -->
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">Send</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </form>
     <script src="site.js" type="text/javascript"></script>
   </body>
 </html>
