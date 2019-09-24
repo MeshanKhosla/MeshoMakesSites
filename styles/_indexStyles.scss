@@ -1,0 +1,126 @@
+@import "./variables";
+@import "./navStyles";
+
+// Attention grabbing text
+.main-content-header {
+  width: 1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 300%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+}
+
+// Different color text
+#business-text {
+  color: $greenColor;
+}
+
+#website-text {
+  color: $redColor;
+}
+
+#way-text {
+  color: $greenColor;
+}
+
+.laptop-image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+@media (min-height: 800px) {
+  .laptop-image {
+    margin-top: 50px;
+  }
+}
+@media (min-height: 900px) {
+  .laptop-image {
+    margin-top: 100px;
+  }
+}
+@media (min-height: 1000px) {
+  .laptop-image {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .laptop-image {
+    transform: translate(-50%, 150%);
+  }
+}
+
+// Two buttons
+.button-wrapper {
+  a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: $whiteColor;
+    border: 2px solid $whiteColor;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+  }
+
+  a span {
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $blueColor;
+    transition: all 0.35s;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+}
+
+// Responsive queries
+
+@media (max-width: 1180px) {
+  .main-content-header {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 998px) {
+  .main-content-header h1 {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content-header h1 {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 480px) {
+}

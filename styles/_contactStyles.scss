@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./navStyles";
+
+.contact-form {
+  background: rgba(30, 124, 179, 0.6);
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 3px grey;
+  margin-bottom: 50px;
+
+  a {
+    color: white;
+  }
+
+  p {
+    position: relative;
+    top: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form p {
+    top: 10%;
+  }
+}

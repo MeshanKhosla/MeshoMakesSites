@@ -1,0 +1,125 @@
+// Navbar
+.nav {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.logo {
+  height: 200px;
+  width: auto;
+  float: left;
+}
+
+.nav-links {
+  margin-left: auto;
+  margin-top: 60px;
+
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+  }
+
+  a {
+    font-family: "Source Serif Pro", serif;
+    color: $whiteColor;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 4px 0px;
+  }
+
+  a:hover {
+    border-bottom: 2px solid $blueColor;
+  }
+}
+
+.current-page {
+  border-bottom: 1px solid $blueColor;
+  border-top: 1px solid $blueColor;
+}
+
+// Clears right/left floats to move content underneath nav
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: $whiteColor;
+  margin: 5px;
+}
+
+.hamburger {
+  padding-top: 60px;
+  position: absolute;
+  right: 15px;
+  display: none;
+}
+
+// Hamburger
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0vh;
+    background-color: $blueColor;
+    margin-top: 0px;
+    width: 50vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+
+    li {
+      display: block;
+      padding: 15px 0px;
+      text-align: center;
+      opacity: 0;
+    }
+
+    a:hover {
+      border-bottom: 2px solid $whiteColor;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+// Burger animations
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./indexStyles";
+@import "./navStyles";
+@import "./aboutStyles";
+@import "./productsStyles";
+@import "./galleryStyles";
+@import "./contactStyles";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: $fontSize;
+  overflow-x: hidden;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("https://www.thomsonreuters.com/content/dam/ewp-m/images/image-library/en/photography/201138-118072186.jpeg.transform/hero-s/q90/image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  background-attachment: fixed;
+}
+h3 {
+  font-size: 300%;
+  text-align: center;
+}
