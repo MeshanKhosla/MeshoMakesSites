@@ -519,6 +519,27 @@
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.mission-statement {
+  left: 15%;
+  display: inline-block;
+  background-color: rgba(41, 11, 121, 0.5);
+  margin-bottom: 25px;
+}
+
+.mission-statement h2 {
+  text-align: center;
+}
+
+.mission-statement p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mission-statement {
+    left: 0%;
+  }
+}
+
 .nav {
   max-width: 1180px;
   margin: 0 auto;
@@ -646,6 +667,41 @@
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.service-card {
+  color: white;
+}
+
+.service-card li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 120%;
+}
+
+.card-header {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.first-option {
+  background-color: #00ad9e80;
+}
+
+.second-option {
+  background-color: #9b00f580;
+}
+
+.modal {
+  color: black;
+}
+
+.modal-title {
+  margin-left: 33%;
+}
+
+.ssd {
+  font-size: 10px;
 }
 
 .nav {

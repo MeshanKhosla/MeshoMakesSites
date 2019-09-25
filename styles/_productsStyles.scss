@@ -1,2 +1,33 @@
 @import "./variables";
 @import "./navStyles";
+
+.service-card {
+  color: white;
+
+  li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 120%;
+  }
+}
+
+.card-header {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.first-option {
+  background-color: #00ad9e80;
+}
+
+.second-option {
+  background-color: #9b00f580;
+}
+
+.modal {
+  color: black;
+}
+
+.modal-title {
+  margin-left: 33%;
+}

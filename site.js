@@ -23,6 +23,9 @@ const navSlide = () => {
 
 const app = () => {
   navSlide();
+  $(function() {
+    $("[data-toggle='popover'").popover();
+  });
 };
 
 app();

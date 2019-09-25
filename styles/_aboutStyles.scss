@@ -1,2 +1,23 @@
 @import "./variables";
 @import "./navStyles";
+
+.mission-statement {
+  left: 15%;
+  display: inline-block;
+  background-color: rgba(41, 11, 121, 0.5);
+  margin-bottom: 25px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-statement {
+    left: 0%;
+  }
+}
