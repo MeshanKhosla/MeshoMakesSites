@@ -2,7 +2,7 @@
 @import "./navStyles";
 
 .service-card {
-  color: white;
+  color: $whiteColor;
 
   li {
     list-style-type: none;
@@ -17,11 +17,11 @@
 }
 
 .first-option {
-  background-color: #00ad9e80;
+  background-color: $tealColor;
 }
 
 .second-option {
-  background-color: #9b00f580;
+  background-color: $purpleColor;
 }
 
 .modal {
@@ -30,4 +30,98 @@
 
 .modal-title {
   margin-left: 33%;
+}
+
+// ! FIRST OPTION BUTTON
+// Copied from _indexStyles.scss -- added margin and different color
+.first-option .button-wrapper-services {
+  margin-top: 10px;
+  a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: $whiteColor;
+    border: 2px solid $whiteColor;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+  }
+
+  a span {
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    // Purple without opacity
+    background: #9b00f5;
+    transition: all 0.35s;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
+}
+
+// ! Second OPTION BUTTON
+// Copied from _indexStyles.scss -- added margin and different color
+.second-option .button-wrapper-services {
+  margin-top: 10px;
+  a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: $whiteColor;
+    border: 2px solid $whiteColor;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+  }
+
+  a span {
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    // Teal without opacity
+    background: #00ad9e;
+    transition: all 0.35s;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  a:hover:after {
+    width: 100%;
+  }
 }
