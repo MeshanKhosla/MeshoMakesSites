@@ -1,3 +1,4 @@
+// Navigation
 const navSlide = () => {
   const hamburger = document.querySelector(".hamburger");
   const nav = document.getElementById("check-class");
@@ -21,11 +22,24 @@ const navSlide = () => {
   });
 };
 
+// Animation
+
+const animation = () => {
+  const businessText = document.querySelector("#business-text");
+  const websiteText = document.querySelector("#website-text");
+  const wayText = document.querySelector("#way-text");
+  const laptopImage = document.querySelector(".laptop-image");
+
+  const tl = new TimelineMax();
+  tl.fromTo(laptopImage, 5, { opacity: "0" }, { opacity: "1" })
+    .fromTo(businessText, 1, { opacity: "0" }, { opacity: "1" }, "-=4")
+    .fromTo(websiteText, 1, { opacity: "0" }, { opacity: "1" }, "-=3")
+    .fromTo(wayText, 1, { opacity: "0" }, { opacity: "1" }, "-=2");
+};
+
 const app = () => {
   navSlide();
-  $(function() {
-    $("[data-toggle='popover'").popover();
-  });
+  animation();
 };
 
 app();

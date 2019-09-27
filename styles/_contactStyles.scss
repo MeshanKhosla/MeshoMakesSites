@@ -74,6 +74,10 @@
   }
 }
 
+.contact-buttons {
+  width: 50%;
+  border: 3px solid red;
+}
 // Queries
 @media (max-width: 768px) {
   .contact-form p {

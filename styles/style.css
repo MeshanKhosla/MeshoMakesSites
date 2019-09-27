@@ -1185,6 +1185,11 @@
   background: #17a55e;
 }
 
+.contact-buttons {
+  width: 50%;
+  border: 3px solid red;
+}
+
 @media (max-width: 768px) {
   .contact-form p {
     top: 10%;
