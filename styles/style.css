@@ -251,16 +251,16 @@
 }
 
 .carousel-wrapper img {
-  margin-top: 60vh;
+  margin-top: 90vh;
   max-height: 50vh;
 }
 
 .carousel-wrapper .carousel-control-prev {
-  margin-top: 60vh;
+  margin-top: 100vh;
 }
 
 .carousel-wrapper .carousel-control-next {
-  margin-top: 60vh;
+  margin-top: 100vh;
 }
 
 @media (max-width: 500px) {
@@ -564,6 +564,11 @@
 
 .mission-statement p {
   text-align: center;
+}
+
+.about-photo {
+  height: 230px;
+  width: auto;
 }
 
 @media (max-width: 768px) {
