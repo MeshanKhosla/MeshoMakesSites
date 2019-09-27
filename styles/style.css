@@ -247,6 +247,7 @@
   width: 100%;
   height: 60vh;
   background-size: cover;
+  z-index: -5;
 }
 
 .carousel-wrapper img {
@@ -958,10 +959,15 @@
 }
 
 .gallery-card-group button {
-  color: white;
+  color: #dadada;
   width: 20%;
   border-radius: 8px;
-  background-color: #2d3161;
+  background-color: rgba(96, 102, 172, 0.8);
+  border: none;
+}
+
+.gallery-card-group button:hover {
+  width: 25%;
 }
 
 .gallery-card-group .card {
@@ -970,8 +976,12 @@
 }
 
 .gallery-card-group .card-img-top:hover {
-  -webkit-box-shadow: 0px 20px 10px grey;
-          box-shadow: 0px 20px 10px grey;
+  -webkit-box-shadow: 0px 0px 50px grey;
+          box-shadow: 0px 0px 50px grey;
+}
+
+.gallery-card-group img {
+  height: 400px;
 }
 
 .nav {
@@ -1118,7 +1128,61 @@
 
 .contact-form p {
   position: relative;
-  top: 40%;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect  */
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #163896;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background: #42484d;
+  color: white;
+}
+
+.btn-startup {
+  background: rgba(94, 21, 128, 0.411);
+  color: white;
+}
+
+.btn-startup:hover {
+  color: white;
+  background: #5e1580;
+}
+
+.btn-code {
+  background: rgba(23, 165, 94, 0.411);
+  color: white;
+}
+
+.btn-code:hover {
+  color: white;
+  background: #17a55e;
 }
 
 @media (max-width: 768px) {

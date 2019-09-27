@@ -5,10 +5,15 @@
   text-align: center;
   color: $whiteColor;
   button {
-    color: white;
+    color: $whiteColor;
     width: 20%;
     border-radius: 8px;
-    background-color: rgb(45, 49, 97);
+    background-color: rgba(96, 102, 172, 0.8);
+    border: none;
+
+    &:hover {
+      width: 25%;
+    }
   }
 
   .card {
@@ -21,6 +26,10 @@
   }
 
   .card-img-top:hover {
-    box-shadow: 0px 20px 10px grey;
+    box-shadow: 0px 0px 50px grey;
+  }
+
+  img {
+    height: 400px;
   }
 }
