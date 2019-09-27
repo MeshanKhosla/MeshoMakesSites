@@ -1,6 +1,9 @@
 @import "./variables";
 @import "./navStyles";
 
+body {
+  scroll-behavior: smooth;
+}
 // Attention grabbing text
 .main-content-header {
   width: 1180px;
@@ -108,18 +111,17 @@
   height: 60vh;
   background-size: cover;
   z-index: -5;
-
   img {
-    margin-top: 90vh;
+    margin-top: 20vh;
     max-height: 50vh;
   }
   // Change both of these when changing margin-top
   .carousel-control-prev {
-    margin-top: 100vh;
+    margin-top: 20vh;
   }
 
   .carousel-control-next {
-    margin-top: 100vh;
+    margin-top: 20vh;
   }
 }
 
@@ -134,6 +136,14 @@
   margin-right: auto;
 }
 
+// Scrolling arrow
+.scrollButton {
+  margin-top: 60vh;
+}
+.home-arrow {
+  height: 100px;
+  width: auto;
+}
 // Responsive queries
 
 @media (max-width: 1180px) {

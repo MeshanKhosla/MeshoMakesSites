@@ -140,6 +140,10 @@
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .main-content-header {
   width: 1180px;
   position: absolute;
@@ -251,16 +255,16 @@
 }
 
 .carousel-wrapper img {
-  margin-top: 90vh;
+  margin-top: 20vh;
   max-height: 50vh;
 }
 
 .carousel-wrapper .carousel-control-prev {
-  margin-top: 100vh;
+  margin-top: 20vh;
 }
 
 .carousel-wrapper .carousel-control-next {
-  margin-top: 100vh;
+  margin-top: 20vh;
 }
 
 @media (max-width: 500px) {
@@ -272,6 +276,15 @@
 .carousel {
   margin-left: auto;
   margin-right: auto;
+}
+
+.scrollButton {
+  margin-top: 60vh;
+}
+
+.home-arrow {
+  height: 100px;
+  width: auto;
 }
 
 @media (max-width: 1180px) {
