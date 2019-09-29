@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./navStyles";
 
-body {
+html {
   scroll-behavior: smooth;
 }
 // Attention grabbing text
@@ -144,6 +144,17 @@ body {
   height: 100px;
   width: auto;
 }
+
+.reviews {
+  text-align: center;
+  h2 {
+    color: $whiteColor;
+  }
+  hr {
+    background-color: white;
+  }
+}
+
 // Responsive queries
 
 @media (max-width: 1180px) {

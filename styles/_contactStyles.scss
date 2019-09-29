@@ -75,9 +75,10 @@
 }
 
 .contact-buttons {
-  width: 50%;
-  border: 3px solid red;
+  text-align: center;
+  transform: translateY(100%);
 }
+
 // Queries
 @media (max-width: 768px) {
   .contact-form p {

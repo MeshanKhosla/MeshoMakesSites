@@ -140,7 +140,7 @@
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
@@ -285,6 +285,18 @@ body {
 .home-arrow {
   height: 100px;
   width: auto;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews h2 {
+  color: #dadada;
+}
+
+.reviews hr {
+  background-color: white;
 }
 
 @media (max-width: 1180px) {
@@ -1204,8 +1216,9 @@ body {
 }
 
 .contact-buttons {
-  width: 50%;
-  border: 3px solid red;
+  text-align: center;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 @media (max-width: 768px) {
