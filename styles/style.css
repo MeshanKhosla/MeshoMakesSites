@@ -591,9 +591,14 @@ html {
   text-align: center;
 }
 
+.about-info {
+  margin-left: 10px;
+}
+
 .about-photo {
   height: 230px;
   width: auto;
+  margin-top: 20%;
 }
 
 @media (max-width: 768px) {
