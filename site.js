@@ -17,10 +17,25 @@ const navSlide = () => {
           2}s`;
       }
     });
-    // Buger Animation
+    // Burger Animation
     hamburger.classList.toggle("toggle");
   });
 };
+
+// Nav scroll
+let div = $(".nav");
+let start = $(div).offset().top;
+let background =
+  "linear-gradient(155deg, rgba(110,107,107,1) 14%, rgba(20,22,22,1) 78%)";
+
+$.event.add(window, "scroll", function() {
+  let p = $(window).scrollTop();
+  $(div).css("position", p > start ? "fixed" : "static");
+  $(div).css("top", p > start ? "0px" : "");
+  $(div).css("right", p > start ? "20px" : "");
+  $(div).css("background", p > start ? background : "");
+  $(div).css("z-index", p > start ? "30" : "");
+});
 
 // Animation
 

@@ -736,8 +736,13 @@ html {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.services-deck {
+  margin: 10px 0px;
+}
+
 .service-card {
   color: #dadada;
+  margin-left: 10px;
 }
 
 .service-card li {
